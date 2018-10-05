@@ -19,8 +19,9 @@ public class HelloStrutsAction extends ActionSupport implements SessionAware{
     
     public String execute(){
     	String ret=ERROR;
-    	HelloStrutsDAO dao = new HelloStrutsDAO();
-    	helloStrutsDTOList = dao.select();
+    	HelloStrutsDAO dao=new HelloStrutsDAO();
+    	
+    	helloStrutsDTOList=dao.select();
     	
     	if(helloStrutsDTOList.size() > 0 ){
     		session.put("helloStrutsDTOList", helloStrutsDTOList);
