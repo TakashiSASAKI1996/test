@@ -26,7 +26,7 @@
 	<tr>
 		<td><s:property value="username"/></td>
 		<td><s:property value="password"/></td>
-		</tr>
+	</tr>
 	</s:iterator>
 	
 
